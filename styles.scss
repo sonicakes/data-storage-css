@@ -1,20 +1,36 @@
 body {
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: hsl(229, 57%, 11%);
+    color: hsl(243, 100%, 93%);
 }
 
 .storage-bar {
     max-width: 600px;
+    background: hsl(228, 56%, 26%);
+    padding: 20px;
+    margin-top: 100px;
 }
 
 .meter { 
-	height: 20px;  /* Can be anything */
+	height: 20px;  
 	position: relative;
-	background: hsl(228, 56%, 26%);
+	background: hsl(229, 57%, 11%);
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
-	padding: 5px;
-    box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    padding: 5px;
+    
+    .cloud {
+        background: #fff;
+        color: hsl(229, 57%, 11%);
+        display: inline-block;
+        position: absolute;
+        top: -90px;
+        right: -70px;
+        padding: 30px;
+        
+    }
     
     & > span {
         display: block;
